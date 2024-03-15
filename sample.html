@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <div style="overflow: hidden; max-width: 100%; width: 500px; height: 500px">
+      <div
+        id="embed-map-canvas"
+        style="height: 100%; width: 100%; max-width: 100%"
+      >
+        <iframe
+          style="height: 100%; width: 100%; border: 0"
+          frameborder="0"
+          src="https://www.google.com/maps/embed/v1/place?q=Visakhapatnam,+Andhra+Pradesh,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+        ></iframe>
+      </div>
+      <a
+        class="our-googlemap-code"
+        href="https://www.bootstrapskins.com/themes"
+        id="auth-map-data"
+        >premium bootstrap themes</a
+      ><style>
+        #embed-map-canvas img {
+          max-height: none;
+          max-width: none !important;
+          background: none !important;
+        }
+      </style>
+    </div>
+    <div id="map" style="height: 400px; width: 100%"></div>
+    <script>
+      function initMap() {
+        var visakhapatnam = { lat: 17.6868, lng: 83.2185 }; // Coordinates of Visakhapatnam
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 12,
+          center: visakhapatnam,
+        });
+        var marker = new google.maps.Marker({
+          position: visakhapatnam,
+          map: map,
+          title: "Visakhapatnam",
+        });
+      }
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    ></script>
+  </body>
+</html>

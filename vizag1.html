@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="vizag.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Vizag
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item bg-success text-white" href="#">Vizag</a>
+                <a class="dropdown-item" href="#">Vijaywada</a>
+                <a class="dropdown-item" href="#">Guntur</a>
+                <a class="dropdown-item" href="#">Hyderabad</a>
+              </div>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        <div class="container mt-4">
+            <div class="d-flex flex-row">
+                <h1 class="city-heading  ">Visakhapatnam Restaurants</h1>
+                <div class="select ml-auto">
+                    <select name="sort">
+                        <option value="">Popularity</option>
+                        <option value="critic_review_rating-desc">Critic Rating</option>
+                        <option value="cost-asc">Cost Low to High</option>
+                        <option value="cost-desc">Cost High to Low</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container restaurants p-3 shadow d-flex flex-row">
+                        <img src="platform65.jpg" class="restaurant-image">
+                        <div class="ml-2">
+                            <h1 class="restaurant-name">Platform 65</h1>
+                            <p class="address">Siripuram, Visakhapatnam</p>
+                            <div class="d-flex flex-row">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                  </svg>
+                                  <a href="https://www.google.com/maps/place/Platform65+The+Train+Theme+Restaurant+-+Vizag/@17.7209759,83.3120071,17z/data=!3m1!4b1!4m6!3m5!1s0x3a3943dd1657f39f:0x964ca6a6434ad2b7!8m2!3d17.7209759!4d83.314582!16s%2Fg%2F11sg_52sd5?entry=ttu">See location</a>
+                            </div>
+                        </div>
+                        <button class="see-menu btn btn-outline-danger">See Menu</button>
+                    </div>
+                </div>
+                <div class="col-12 mt-4">
+                    <div class="container restaurants p-3 shadow d-flex flex-row">
+                        <img src="Zeeshan.png" class="restaurant-image">
+                        <div class="ml-2">
+                            <h1 class="restaurant-name">Zeeshan</h1>
+                            <p class="address">Jagadamba, Visakhapatnam</p>
+                            <div class="d-flex flex-row">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                  </svg>
+                                  <a href="https://www.google.com/maps/place/Zeeshan+Restaurant+-+Apna+Hyderabadi+Food/@17.7119077,83.2989682,17z/data=!3m1!4b1!4m6!3m5!1s0x3a39431a543b5b45:0xfc8de9fe69cac5bb!8m2!3d17.7119077!4d83.3015431!16s%2Fg%2F11b5s2fbpz?entry=ttu">See location</a>
+                            </div>
+                        </div>
+                        <button class="see-menu btn btn-outline-danger">See Menu</button>
+                    </div>
+                </div>
+                <div class="col-12 mt-4">
+                    <div class="container restaurants p-3 shadow d-flex flex-row">
+                        <img src="Hashtag.jpeg" class="restaurant-image">
+                        <div class="ml-2">
+                            <h1 class="restaurant-name">Hashtag</h1>
+                            <p class="address">Lawsonsbay, Visakhapatnam</p>
+                            <div class="d-flex flex-row">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                  </svg>
+                                  <a href="https://www.google.com/maps/place/Hashtag+Resto+Caf%C3%A9/@17.7310399,83.3375562,17z/data=!3m1!4b1!4m6!3m5!1s0x3a3945c63640eae7:0x7766a5c258bbbf34!8m2!3d17.7310399!4d83.3401311!16s%2Fg%2F11h_7kvpt8?entry=ttu">See location</a>
+                            </div>
+                        </div>
+                        <button class="see-menu btn btn-outline-danger">See Menu</button>
+                    </div>  
+                </div>
+                <div class="col-12 mt-4">
+                    <div class="container restaurants p-3 shadow d-flex flex-row">
+                        <img src="Sairam.jpeg" class="restaurant-image">
+                        <div class="ml-2">
+                            <h1 class="restaurant-name">Sri Sairam Parlour</h1>
+                            <p class="address">Dwaraka Nagar, Visakhapatnam</p>
+                            <div class="d-flex flex-row">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                  </svg>
+                                  <a href="https://www.google.com/maps/place/Sri+Sairam+Parlour/@17.7218188,83.224188,13z/data=!4m10!1m2!2m1!1sSri+sairam+parlour!3m6!1s0x3a394324a76edcc7:0x5e94b64845626ed5!8m2!3d17.7261983!4d83.303315!15sChJTcmkgc2FpcmFtIHBhcmxvdXJaFCISc3JpIHNhaXJhbSBwYXJsb3VykgEKcmVzdGF1cmFudJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOaGRrbHBYMWRuRUFF4AEA!16s%2Fg%2F1tdd3pn9?entry=ttu">See location</a>
+                            </div>
+                        </div>
+                        <button class="see-menu btn btn-outline-danger">See Menu</button>
+                    </div>
+                    
+                </div>
+                <div class="col-12 mt-4">
+                    <div class="container restaurants p-3 shadow d-flex flex-row">
+                        <img src="Bombay.jpeg" class="restaurant-image" >
+                        <div class="ml-2">
+                            <h1 class="restaurant-name">Bombay Restaurant</h1>
+                            <p class="address">Allipuram, Visakhapatnam</p>
+                            <div class="d-flex flex-row">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                  </svg>
+                                  <a href="https://www.google.com/maps/search/bombay+restaurant,allipuram,+visakhapatnam/@17.7175998,83.2989847,16z?entry=ttu">See location</a>
+                            </div>
+                        </div>
+                        <button class="see-menu btn btn-outline-danger">See Menu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

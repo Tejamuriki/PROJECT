@@ -1,0 +1,16 @@
+.home-bg {
+  background-image: url("bg.jpg");
+  height: 60vh;
+  background-size: cover;
+}
+#service-1 {
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #c9401a;
+}
+.card-img-top {
+  height: 175px;
+  width: 400px;
+  border-radius: 20px;
+}
